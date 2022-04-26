@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+import theService from './Service/currency';
+import Currencies from './Components/Currencies';
+import Buttons from './Components/Buttons';
+
 import './App.css';
 
-function App() {
+function App () {
+  const [currenOption, setCurrentOption] = useState([]);
+  const [secondOptions, setSecondOption] = useState([]);
+
+
+  // create useEffect for array
+  useEffect(() => {
+    theService
+    .getAll()
+    .then(currenOption => {
+      setCurrentOption(currenOption)
+    })
+  }, []);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Buttons />
+      <Currencies currenOption={currenOption}/>
     </div>
   );
 }
