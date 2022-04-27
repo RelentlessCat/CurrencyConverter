@@ -1,12 +1,15 @@
-function Currencies({currency}) {
+function Currencies({currencies}) {
 
     return (
+      <div className="mapCurrencies">
        <ul>
-          {currency.map((countryName) => (
-            <li key={countryName.id}>{currency.countryName}: {currency.rates}
+          {currencies.map((currency) => (
+            <li key={currency.id}>
+              {currency.id} {currency.country}: {currency.rate}
             </li>
           ))}
       </ul>
+      </div>
     )
   }
   

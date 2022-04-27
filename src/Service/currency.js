@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // create base url to establish connection to database
-const baseUrl = 'http://localhost:3001/currency';
+const baseUrl = 'http://localhost:3001/currencies';
 
 const getAll = () => {
     const request = axios.get(baseUrl)

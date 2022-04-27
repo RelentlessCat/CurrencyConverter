@@ -1,0 +1,14 @@
+{
+    "currencies": [
+    {
+        "id": "AED",
+        "country": "United Arab Emirates Dirham",
+        "rate": 3.936525
+    },
+    {
+        "id": "AFN",
+        "country": "Afghan Afghani",
+        "rate": 93.12784
+    }
+    ]
+}
