@@ -1,0 +1,876 @@
+{
+    "currency": {
+      "countryName":[
+        {
+            "id": "AED",
+            "country": "United Arab Emirates Dirham",
+            "rate": 3.936525
+        },
+        {
+            "id": "AFN",
+            "country": "Afghan Afghani",
+            "rate": 93.12784
+        },
+        {
+            "id": "ALL",
+            "country": "Albanian Lek",
+            "rate": 119.130618
+        },
+        {
+            "id": "AMD",
+            "country": "Armenian Dram",
+            "rate": 504.560216
+        },
+        {
+            "id": "ANG",
+            "country": "Netherlands Antillean Guilder",
+            "rate": 1.933888
+        },
+        {
+            "id": "AOA",
+            "country": "Angolan Kwanza",
+            "rate": 433.157926
+        },
+        {
+            "id": "ARS",
+            "country": "Argentine Peso",
+            "rate": 122.377683
+        },
+        {
+            "id": "AUD",
+            "country": "Australian Dollar",
+            "rate": 1.498023
+        },
+        {
+            "id": "AWG",
+            "country": "Aruban Florin",
+            "rate": 1.929693
+        },
+        {
+            "id": "AZN",
+            "country": "Azerbaijani Manat",
+            "rate": 1.782824
+        },
+        {
+            "id": "BAM",
+            "country": "Bosnia-Herzegovina Convertible Mark",
+            "rate": 1.940331
+        },
+        {
+            "id": "BBD",
+            "country": "Barbadian Dollar",
+            "rate": 2.166534
+        },
+        {
+            "id": "BDT",
+            "country": "Bangladeshi Taka",
+            "rate": 92.521509
+        },
+        {
+            "id": "BGN",
+            "country": "Bulgarian Lev",
+            "rate": 1.943527
+        },
+        {
+            "id": "BHD",
+            "country": "Bahraini Dinar",
+            "rate": 0.404009
+        },
+        {
+            "id": "BIF",
+            "country": "Burundian Franc",
+            "rate": 2202.923784
+        },
+        {
+            "id": "BMD",
+            "country": "Bermudan Dollar",
+            "rate": 1.071754
+        },
+        {
+            "id": "BND",
+            "country": "Brunei Dollar",
+            "rate": 1.465692
+        },
+        {
+            "id": "BOB",
+            "country": "Bolivian Boliviano",
+            "rate": 7.376973
+        },
+        {
+            "id": "BRL",
+            "country": "Brazilian Real",
+            "rate": 5.139064
+        },
+        {
+            "id": "BSD",
+            "country": "Bahamian Dollar",
+            "rate": 1.073049
+        },
+        {
+            "id": "BTC",
+            "country": "Bitcoin",
+            "rate": 2.7460892e-5
+        },
+        {
+            "id": "BTN",
+            "country": "Bhutanese Ngultrum",
+            "rate": 81.921992
+        },        
+        {
+            "id": "BWP",
+            "country": "Botswanan Pula",
+            "rate": 12.7591
+        },
+        {
+            "id": "BYN",
+            "country": "Belarusian Ruble",
+            "rate": 3.608146
+        },
+        {
+            "id": "BYR",
+            "country": "Belize Dollar",
+            "rate": 21006.376828
+        },     
+        {
+            "id": "BZD",
+            "country": "Canadian Dollar",
+            "rate": 2.162963
+        },
+        {
+            "id": "CAD",
+            "country": "Congolese Franc",
+            "rate": 1.366969
+        },
+        {
+            "id": "CDF",
+            "country": "Swiss Franc",
+            "rate": 2156.369268
+        },
+        {
+            "id": "CHF",
+            "country": "Chilean Unit of Account (UF)",
+            "rate": 1.027587
+        },
+        {
+            "id": "CLF",
+            "country": "Chilean Peso",
+            "rate": 0.03252
+        },        
+        {
+            "id": "CLP",
+            "country": "Chinese Yuan (Offshore)",
+            "rate": 897.325728
+        },
+        {
+            "id": "CNY",
+            "country": "Chinese Yuan",
+            "rate": 7.023847
+        },
+        {
+            "id": "COP",
+            "country": "Colombian Peso",
+            "rate": 4132.693832
+        },
+        {
+            "id": "CRC",
+            "country": "Costa Rican Colón",
+            "rate": 705.633336
+        },
+        {
+            "id": "CUC",
+            "country": "Cuban Convertible Pes",
+            "rate": 1.071754
+        },
+        {
+            "id": "CUP",
+            "country": "Cuban Peso",
+            "rate": 28.401479
+        },
+        {
+            "id": "CVE",
+            "country": "Cape Verdean Escudo",
+            "rate": 109.397775
+        },
+        {
+            "id": "CZK",
+            "country": "Czech Republic Koruna",
+            "rate": 24.358866
+        },
+        {
+            "id": "DJF",
+            "country": "Djiboutian Franc",
+            "rate": 191.027652
+        },
+        {
+            "id": "DKK",
+            "country": "Danish Krone",
+            "rate": 7.440641
+        },
+        {
+            "id": "DOP",
+            "country": "Dominican Peso",
+            "rate": 58.995574
+        },
+        {
+            "id": "DZD",
+            "country": "Algerian Dinar",
+            "rate": 154.220467
+        },        
+        {
+            "id": "EGP",
+            "country": "Egyptian Pound",
+            "rate": 19.914152
+        },
+        {
+            "id": "ERN",
+            "country": "Eritrean Nakfa",
+            "rate": 16.076311
+        },
+        {
+            "id": "ETB",
+            "country": "Ethiopian Birr",
+            "rate": 55.284805
+        },
+        {
+            "id": "EUR",
+            "country": "Euro",
+            "rate": 1
+        },
+        {
+            "id": "FJD",
+            "country": "Fijian Dollar",
+            "rate": 2.300948
+        },
+        {
+            "id": "FKP",
+            "country": "Falkland Islands Pound",
+            "rate": 0.823795
+        },
+        {
+            "id": "GBP",
+            "country": "British Pound Sterling",
+            "rate": 0.840426
+        },
+        {
+            "id": "GEL",
+            "country": "Georgian Lari",
+            "rate": 3.252801
+        },        
+        {
+            "id": "GGP",
+            "country": "Guernsey Pound",
+            "rate": 0.823795
+        },
+        {
+            "id": "GHS",
+            "country": "Ghanaian Cedi",
+            "rate": 8.074888
+        },
+        {
+            "id": "GIP",
+            "country": "Gibraltar Pound",
+            "rate": 0.823795
+        },
+        {
+            "id": "GMD",
+            "country": "Gambian Dalasi",
+            "rate": 57.740757
+        },
+        {
+            "id": "GNF",
+            "country": "Guinean Franc",
+            "rate": 9538.099459
+        },
+        {
+            "id": "GTQ",
+            "country": "Guatemalan Quetzal",
+            "rate": 8.218865
+        },
+        {
+            "id": "GYD",
+            "country": "Guyanaese Dollar",
+            "rate": 224.500326
+        },
+        {
+            "id": "HKD",
+            "country": "Hong Kong Dollar",
+            "rate": 8.409893
+        },
+        {
+            "id": "HNL",
+            "country": "Honduran Lempira",
+            "rate": 26.335877
+        },
+        {
+            "id": "HRK",
+            "country": "Croatian Kuna",
+            "rate": 7.562936
+        },
+        {
+            "id": "HTG",
+            "country": "Haitian Gourde",
+            "rate": 116.956578
+        },
+        {
+            "id": "HUF",
+            "country": "Hungarian Forint",
+            "rate": 372.997129
+        },
+        {
+            "id": "IDR",
+            "country": "Indonesian Rupiah",
+            "rate": 15505.171133
+        },
+        {
+            "id": "ILS",
+            "country": "Israeli New Sheqel",
+            "rate": 3.51076
+        },
+        {
+            "id": "IMP",
+            "country": "Manx pound",
+            "rate": 0.823795
+        },
+        {
+            "id": "INR",
+            "country": "Indian Rupee",
+            "rate": 82.258715
+        },
+        {
+            "id": "IQD",
+            "country": "Iraqi Dinar",
+            "rate": 1566.109276
+        },
+        {
+            "id": "IRR",
+            "country": "Iranian Rial",
+            "rate": 45388.778847
+        },
+        {
+            "id": "ISK",
+            "country": "Icelandic Króna",
+            "rate": 138.82424
+        },
+        {
+            "id": "JEP",
+            "country": "Jersey Pound",
+            "rate": 0.823795
+        },
+        {
+            "id": "JMD",
+            "country": "Jamaican Dollar",
+            "rate": 166.20249
+        },
+        {
+            "id": "JOD",
+            "country": "Jordanian Dinar",
+            "rate": 0.75966
+        },
+        {
+            "id": "JPY",
+            "country": "Japanese Yen",
+            "rate": 137.492082
+        },
+        {
+            "id": "KES",
+            "country": "Kenyan Shilling",
+            "rate": 123.948119
+        },
+        {
+            "id": "KGS",
+            "country": "Kyrgystani Som",
+            "rate": 86.667486
+        },
+        {
+            "id": "KHR",
+            "country": "Cambodian Riel",
+            "rate": 4338.107089
+        },
+        {
+            "id": "KMF",
+            "country": "Comorian Franc",
+            "rate": 489.146152
+        },
+        {
+            "id": "KPW",
+            "country": "North Korean Won",
+            "rate": 964.578655
+        },
+        {
+            "id": "KRW",
+            "country": "South Korean Won",
+            "rate": 1343.025714
+        },
+        {
+            "id": "KWD",
+            "country": "Kuwaiti Dinar",
+            "rate": 0.327632
+        },
+        {
+            "id": "KYD",
+            "country": "Cayman Islands Dollar",
+            "rate": 0.894174
+        },
+        {
+            "id": "KZT",
+            "country": "Kazakhstani Tenge",
+            "rate": 476.482787
+        },
+        {
+            "id": "LAK",
+            "country": "Laotian Kip",
+            "rate": 12868.844894
+        },
+        {
+            "id": "LBP",
+            "country": "Lebanese Pound",
+            "rate": 1622.668541
+        },
+        {
+            "id": "LKR",
+            "country": "Sri Lankan Rupee",
+            "rate": 359.46642
+        },
+        {
+            "id": "LRD",
+            "country": "Liberian Dollar",
+            "rate": 162.719093
+        },
+        {
+            "id": "LSL",
+            "country": "Lesotho Loti",
+            "rate": 16.76195
+        },
+        {
+            "id": "LTL",
+            "country": "Lithuanian Litas",
+            "rate": 3.164611
+        },
+        {
+            "id": "LVL",
+            "country": "Latvian lats",
+            "rate": 0.648293
+        },
+        {
+            "id": "LYD",
+            "country": "Libyan Dinar",
+            "rate": 5.054519
+        },
+        {
+            "id": "MAD",
+            "country": "Moroccan Dirham",
+            "rate": 10.528703
+        },
+        {
+            "id": "MDL",
+            "country": "Moldovan Leu",
+            "rate": 19.808243
+        },
+        {
+            "id": "MGA",
+            "country": "Malagasy Ariary",
+            "rate": 4337.741433
+        },
+        {
+            "id": "MKD",
+            "country": "Macedonian Denar",
+            "rate": 61.291255
+        },
+        {
+            "id": "MMK",
+            "country": "Myanma Kyat",
+            "rate": 1986.722006
+        },
+        {
+            "id": "MNT",
+            "country": "Mongolian Tugrik",
+            "rate": 3209.756372
+        },
+        {
+            "id": "MOP",
+            "country": "Macanese Pataca",
+            "rate": 8.671693
+        },
+        {
+            "id": "MRO",
+            "country": "Mauritanian ouguiya",
+            "rate": 382.615965
+        },
+        {
+            "id": "MRU",
+            "country": "Mauritanian ouguiya",
+            "rate": 382.615965
+        },
+        {
+            "id": "MUR",
+            "country": "Mauritian Rupee",
+            "rate": 45.967465
+        },
+        {
+            "id": "MVR",
+            "country": "Maldivian Rufiyaa",
+            "rate": 16.558866
+        },
+        {
+            "id": "MWK",
+            "country": "Malawian Kwacha",
+            "rate": 876.619992
+        },
+        {
+            "id": "MXN",
+            "country": "Mexican Peso",
+            "rate": 21.858175
+        },
+        {
+            "id": "MYR",
+            "country": "Malaysian Ringgit",
+            "rate": 4.668026
+        },
+        {
+            "id": "MZN",
+            "country": "Mozambican Metical",
+            "rate": 68.410057
+        },
+        {
+            "id": "NAD",
+            "country": "Namibian Dollar",
+            "rate": 16.762453
+        },
+        {
+            "id": "NGN",
+            "country": "Nigerian Naira",
+            "rate": 445.399256
+        },
+        {
+            "id": "NIO",
+            "country": "Nicaraguan Córdoba",
+            "rate": 38.419467
+        },
+        {
+            "id": "NOK",
+            "country": "Norwegian Krone",
+            "rate": 9.683232
+        },
+        {
+            "id": "NPR",
+            "country": "Nepalese Rupee",
+            "rate": 131.082757
+        },
+        {
+            "id": "NZD",
+            "country": "New Zealand Dollar",
+            "rate": 1.626649
+        },
+        {
+            "id": "OMR",
+            "country": "Omani Rial",
+            "rate": 0.412631
+        },
+        {
+            "id": "PAB",
+            "country": "Panamanian Balboa",
+            "rate": 1.073029
+        },
+        {
+            "id": "PEN",
+            "country": "Peruvian Nuevo Sol",
+            "rate": 4.010998
+        },
+        {
+            "id": "PGK",
+            "country": "Papua New Guinean Kina",
+            "rate": 3.780968
+        },
+        {
+            "id": "PHP",
+            "country": "Philippine Peso",
+            "rate": 56.25743
+        },
+        {
+            "id": "PKR",
+            "country": "Pakistani Rupee",
+            "rate": 199.852524
+        },
+        {
+            "id": "PLN",
+            "country": "Polish Zloty",
+            "rate": 4.650703
+        },
+        {
+            "id": "PYG",
+            "country": "Paraguayan Guarani",
+            "rate": 7324.429752
+        },
+        {
+            "id": "QAR",
+            "country": "Qatari Rial",
+            "rate": 3.902251
+        },
+        {
+            "id": "RON",
+            "country": "Romanian Leu",
+            "rate": 4.906274
+        },
+        {
+            "id": "RSD",
+            "country": "Serbian Dinar",
+            "rate": 117.614214
+        },
+        {
+            "id": "RUB",
+            "country": "Russian Ruble",
+            "rate": 82.34925
+        },
+        {
+            "id": "RWF",
+            "country": "Rwandan Franc",
+            "rate": 1092.652375
+        },
+        {
+            "id": "SAR",
+            "country": "Saudi Riyal",
+            "rate": 4.01807
+        },
+        {
+            "id": "SBD",
+            "country": "Solomon Islands Dollar",
+            "rate": 8.591248
+        },
+        {
+            "id": "SCR",
+            "country": "Seychellois Rupee",
+            "rate": 14.958148
+        },
+        {
+            "id": "SDG",
+            "country": "Sudanese Pound",
+            "rate": 479.606668
+        },
+        {
+            "id": "SEK",
+            "country": "Swedish Krona",
+            "rate": 10.320856
+        },
+        {
+            "id": "SGD",
+            "country": "Singapore Dollar",
+            "rate": 1.477195
+        },
+        {
+            "id": "SHP",
+            "country": "Saint Helena Pound",
+            "rate": 1.476235
+        },
+        {
+            "id": "SLL",
+            "country": "Sierra Leonean Leone",
+            "rate": 13332.619065
+        },
+        {
+            "id": "SOS",
+            "country": "Somali Shilling",
+            "rate": 617.33062
+        },
+        {
+            "id": "SRD",
+            "country": "Surinamese Dollar",
+            "rate": 22.221208
+        },
+        {
+            "id": "SSP",
+            "country": "South Sudanese Pound",
+            "rate": 139.2434290699
+        },
+        {
+            "id": "STD",
+            "country": "Sao Tome and Principe Dobra (pre-2018)",
+            "rate": 22183.142277
+        },
+        {
+            "id": "STN",
+            "country": "Sao Tome and Principe Dobra",
+            "rate": 24.4121
+        },
+        {
+            "id": "SVC",
+            "country": "Salvadoran Colón",
+            "rate": 9.389175
+        },
+        {
+            "id": "SYP",
+            "country": "Syrian Pound",
+            "rate": 2692.727591
+        },
+        {
+            "id": "SZL",
+            "country": "Swazi Lilangeni",
+            "rate": 16.61573
+        },
+        {
+            "id": "THB",
+            "country": "Thai Baht",
+            "rate": 36.503505
+        },
+        {
+            "id": "TJS",
+            "country": "Tajikistani Somoni",
+            "rate": 13.417397
+        },
+        {
+            "id": "TMT",
+            "country": "Turkmenistani Manat",
+            "rate": 3.751139
+        },
+        {
+            "id": "TND",
+            "country": "Tunisian Dinar",
+            "rate": 3.227589
+        },
+        {
+            "id": "TOP",
+            "country": "Tongan Pa'anga",
+            "rate": 2.43835
+        },
+        {
+            "id": "TRY",
+            "country": "Turkish Lira",
+            "rate": 15.82691
+        },
+        {
+            "id": "TTD",
+            "country": "Trinidad and Tobago Dollar",
+            "rate": 7.283159
+        },
+        {
+            "id": "TWD",
+            "country": "New Taiwan Dollar",
+            "rate": 31.492955
+        },
+        {
+            "id": "TZS",
+            "country": "Tanzanian Shilling",
+            "rate": 2490.756234
+        },
+        {
+            "id": "UAH",
+            "country": "Ukrainian Hryvnia",
+            "rate": 31.5469
+        },
+        {
+            "id": "UGX",
+            "country": "Ugandan Shilling",
+            "rate": 3780.431508
+        },
+        {
+            "id": "USD",
+            "country": "United States Dollar",
+            "rate": 1.071754
+        },
+        {
+            "id": "UYU",
+            "country": "Uruguayan Peso",
+            "rate": 43.793546
+        },
+        {
+            "id": "UZS",
+            "country": "Uzbekistan Som",
+            "rate": 12082.324672
+        },
+        {
+            "id": "VEF",
+            "country": "Venezuelan Bolívar Fuerte (Old)",
+            "rate": 229173378962.03882
+        },
+        {
+            "id": "VES",
+            "country": "Venezuelan Bolívar Fuerte",
+            "rate": 4.71
+        },
+        {
+            "id": "VND",
+            "country": "Vietnamese Dong",
+            "rate": 24629.976831
+        },
+        {
+            "id": "VUV",
+            "country": "Vanuatu Vatu",
+            "rate": 120.659826
+        },
+        {
+            "id": "WST",
+            "country": "Samoan Tala",
+            "rate": 2.770958
+        },
+        {
+            "id": "XAF",
+            "country": "CFA Franc BEAC",
+            "rate": 650.770841
+        },
+        {
+            "id": "XAG",
+            "country": "Silver Ounce",
+            "rate": 0.04529
+        },
+        {
+            "id": "XAU",
+            "country": "Gold Ounce",
+            "rate": 1787.77
+        },
+        {
+            "id": "XCD",
+            "country": "East Caribbean Dollar",
+            "rate": 0.00056
+        },
+        {
+            "id": "XDR",
+            "country": "Special Drawing Rights",
+            "rate": 0.785235
+        },
+        {
+            "id": "XOF",
+            "country": "CFA Franc BCEAO",
+            "rate": 650.770841
+        },
+        {
+            "id": "XPD",
+            "country": "Palladium Ounce",
+            "rate": 2109.00
+        },
+        {
+            "id": "XPF",
+            "country": "CFP Franc",
+            "rate": 118.964177
+        },
+        {
+            "id": "XPT",
+            "country": "Platinum Ounce",
+            "rate": 869.00
+        },
+        {
+            "id": "YER",
+            "country": "Yemeni Rial",
+            "rate": 268.206834
+        },
+        {
+            "id": "ZAR",
+            "country": "South African Rand",
+            "rate": 16.819675
+        },
+        {
+            "id": "ZMK",
+            "country": "Zambia Kwacha",
+            "rate": 9647.066203
+        },
+        {
+            "id": "ZMW",
+            "country": "Zambian Kwacha",
+            "rate": 18.053824
+        },
+        {
+            "id": "ZWL",
+            "country": "Zimbabwean Dollar",
+            "rate": 345.104325
+        }
+    ]
+}
+}
