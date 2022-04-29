@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import theService from './Service/currency';
-import Currencies from './Components/Currencies';
+import CurrencyRow from './Components/CurrencyRow';
 
 
 import './App.css';
@@ -9,7 +9,7 @@ import './App.css';
 //const data = require("./db.json");
 
 function App () {
-  const [currenOption, setCurrentOption] = useState([]);
+  const [currencyOptions, setCurrentOption] = useState([]);
   //const [secondOptions, setSecondOption] = useState([]);
 
 
@@ -17,8 +17,8 @@ function App () {
   useEffect(() => {
     theService
     .getAll()
-    .then(currenOption => {
-      setCurrentOption(currenOption)
+    .then(currencyOptions => {
+      setCurrentOption(currencyOptions)
     })
   }, []);
 
@@ -26,7 +26,9 @@ function App () {
   return (
     <div className="flex-container">
       <h1>Converter</h1>
-      <Currencies currencies={currenOption}/>
+      <CurrencyRow currencyOptions={currencyOptions}/>
+      <div>=</div>
+      <CurrencyRow currencyOptions={currencyOptions}/>
     </div>
   );
 }

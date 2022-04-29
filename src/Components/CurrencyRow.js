@@ -1,11 +1,15 @@
-function CurrencyRow() {
+function CurrencyRow({currencyOptions}) {
     return (
         // parent class
-        <div>
-        <input type="number" />
+        <div className="mapRow">
+        <input type="number" className="input"/>
         <select>
-            <option value="HI">HI!</option>
+            {currencyOptions.map((option) => (
+            <option key={option.id} value={option}>{option.id}</option>
+            ))}
         </select>
         </div>
     )
 }
+
+export default CurrencyRow;
