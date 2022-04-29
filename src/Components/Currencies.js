@@ -1,11 +1,12 @@
-function Currencies({currencies}) {
+function CurrencyColumn({currencyOptions}) {
 
     return (
       <div className="mapCurrencies">
        <ul>
-          {currencies.map((currency) => (
-            <li key={currency.id}>
-              {currency.id} {currency.country}: {currency.rate}
+          {currencyOptions.map((option) => (
+            <li key={option.id}>
+              {option.id} {option.country}: {option.rate}
+              <button onClick='#'>Update</button>
             </li>
           ))}
       </ul>
@@ -13,4 +14,4 @@ function Currencies({currencies}) {
     )
   }
   
-  export default Currencies;
+  export default CurrencyColumn;
