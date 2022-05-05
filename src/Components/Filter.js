@@ -2,8 +2,8 @@ import React from 'react'
 
 function Filter({filter,handleFilterChange}) {
   return (
-    <div>
-    Filter shown:
+    <div className='filter'>
+      <p>Filter Shown:</p>
     <input value={filter} onChange={handleFilterChange} />
   </div>
   )
