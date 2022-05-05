@@ -1,110 +1,81 @@
 import { useState, useEffect } from 'react';
 import theService from './Service/currency';
 import CurrencyRow from './Components/CurrencyRow';
-import CurrencyColumn from './Components/Currencies';
-import Filter from './Components/Filter';
-import Notification from './Components/Notification';
+
 import './App.css';
 
 
 //const data = require("./db.json");
 
-function App () {
-  const [currencyOptions, setCurrentOption] = useState([]);
-  //const [secondOptions, setSecondOption] = useState([]);
-  const [newId, setNewId] = useState("")
-  const [newCountry, setNewCountry] = useState("")
-  const [newRate, setNewRate] = useState("")
-  const [filter, setFilter] = useState('')
-  const [message, setMessage] = useState(null)
+function App() {
+  const [currencyOptions, setCurrencyOptions] = useState([])
+  const [fromCurrency, setFromCurrency] = useState()
+  const [toCurrency, setToCurrency] = useState()
+  const [exchangeRate, setExchangeRate] = useState()
+  const [amount, setAmount] = useState(1)
+  const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
 
+  let toAmount, fromAmount
+  if (amountInFromCurrency) {
+    fromAmount = amount
+    toAmount = amount * exchangeRate
+  } else {
+    toAmount = amount
+    fromAmount = amount / exchangeRate
+  }
   // create useEffect for array
   useEffect(() => {
     theService
-    .getAll()
-    .then(currencyOptions => {
-      setCurrentOption(currencyOptions)
-    })
+      .getAll()
+      .then(data => {
+        const firstCurrency = data[46];
+        console.log(firstCurrency)
+        setCurrencyOptions(data)
+        setFromCurrency(data)
+        setToCurrency(firstCurrency)
+        setExchangeRate(data[firstCurrency])
+      })
   }, []);
 
-
-  // update existing currencies
-  const addUpdate = (event) => {
-    event.preventDefault();
-
-    const newObject = {
-      id: newId,
-      country: newCountry,
-      rate: newRate
-    };
-
-    const index = currencyOptions.findIndex(p => p.id === newId)
-    console.log(index);
-
-    if(index !== -1){
-      const msg=`This ${newObject.id} already exist! `
-      if(window.confirm(msg)){
-        theService
-        .update(currencyOptions[index].id, newObject)
-        .then(response => {
-          setNewId(currencyOptions.map(p => (p.id === newId ? newObject : p)))
-          setNewId('')
-        })
-      }
-    }
-    else {         
+  useEffect(() => {
+    if (fromCurrency != null && toCurrency != null) {
       theService
-      .create(newObject)
-      .then(response => {
-        setCurrentOption(currencyOptions.concat(response))
-        setNewId('')
-      })
-      setMessage({
-        payload:`Added ${newId}`,
-        status:'success'
-      }
-      )
-      setTimeout(() => {
-        setMessage(null)
-      }, 3000)
-    
+        .getAll()
+        .then(data => {
+          const nextCurrency = data[fromCurrency];
+          setExchangeRate(data[nextCurrency])
+        })
     }
+  }, [fromCurrency, toCurrency])
+
+  function handleFromAmountChange(e) {
+    setAmount(e.target.value)
+    setAmountInFromCurrency(true)
   }
 
-  // create handle
-  const handleIdChange = (e) => setNewId(e.target.value)
-  const handleCountryChange = (e) => setNewCountry(e.target.value)
-  const handleRateChange = (e) => setNewRate(e.target.value)
-
-  // create filter
-  const handleFilterChange = (e) => {
-    setFilter(e.target.value)
-    setCurrentOption(currencyOptions.filter((option) =>
-      (option.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1)))
-  }
-
-  // create schema
-  const formData = {
-    addUpdate,
-    handleIdChange,
-    handleCountryChange,
-    handleRateChange,
-    newId,
-    newCountry,
-    newRate
+  function handleToAmountChange(e) {
+    setAmount(e.target.value)
+    setAmountInFromCurrency(false)
   }
 
   return (
     <div className="flex-container">
-      <Notification message={message}/>
-      <h1>Converter</h1>
-      <Filter filter={filter} handleFilterChange={handleFilterChange}/>
-      <CurrencyRow currencyOptions={currencyOptions}/>
-      <div>=</div>
-      <CurrencyRow currencyOptions={currencyOptions}/>
-      <div className='sidebar'>
-        <CurrencyColumn currencyOptions={currencyOptions}/>
-      </div>
+      <h1>Convert</h1>
+      <CurrencyRow
+        currencyOptions={currencyOptions}
+        selectedCurrency={fromCurrency}
+        onChangeCurrency={e => setFromCurrency(e.target.value)}
+        onChangeAmount={handleFromAmountChange}
+        amount={fromAmount}
+      />
+      <div className="equals">=</div>
+      <CurrencyRow
+        currencyOptions={currencyOptions}
+        selectedCurrency={toCurrency}
+        onChangeCurrency={e => setToCurrency(e.target.value)}
+        onChangeAmount={handleToAmountChange}
+        amount={toAmount}
+      />
     </div>
   );
 }
